@@ -16,7 +16,7 @@ Thomas Guilment, Gabriele Morra, Orhun Aydin, Stefany Carty
 
 # Nautilopy
 
-![](../img/Logo_nautilopy_tiny.png)
+![](./img/Logo_nautilopy_tiny.png)
 
 ## Project Overview
 
