@@ -16,33 +16,21 @@ Thomas Guilment, Gabriele Morra, Orhun Aydin, Stefany Carty
 
 # Nautilopy
 
-<div style="display: flex; justify-content: space-between; align-items: center; max-width: 2000px; margin: 0 auto; padding: 20px;">
-
-<div style="display: flex; flex-direction: column; align-items: center; padding-top: 50px;">
-
+<!-- <div style="display: flex; justify-content: space-between; align-items: center; max-width: 2000px; margin: 0 auto; padding: 20px;">
+  <div style="display: flex; flex-direction: column; align-items: center; padding-top: 50px;">
     <img src="./img/Logo_Jupyter.png" style="width: 100px; height: 100px;">
-
-</div>
-
-<div style="display: flex; flex-direction: column; align-items: center; padding: 0 100px;">
-
+  </div>
+  <div style="display: flex; flex-direction: column; align-items: center; padding: 0 100px;">
     <img src="./img/Logo_nautilopy_tiny.png" style="width: 200px; height: 200px;">
-
-</div>
-
-<div style="display: flex; flex-direction: column; align-items: center; padding-top: 50px;">
-
+  </div>
+  <div style="display: flex; flex-direction: column; align-items: center; padding-top: 50px;">
     <img src="./img/Logo_Python.png" style="width: 100px; height: 100px;">
+  </div>
+</div> -->
+
+<div>
 
 </div>
-
-</div>
-
-<!-- ::: {layout-ncol=3}
-![](./img/Logo_Jupyter.png)
-![](./img/Logo_nautilopy_tiny.png)
-![](./img/Logo_Python.png)
-::: -->
 
 ## Project Overview
 
