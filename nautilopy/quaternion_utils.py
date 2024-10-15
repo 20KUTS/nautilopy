@@ -14,7 +14,7 @@ def f_q2roll_pitch_yaw(v_quaternion):
     Convert a quaternion to roll, pitch, and yaw angles (Euler angles).
 
     This implementation assumes normalized quaternion converts to Euler angles in a 3-2-1 sequence.
-    The 3-2-1 or YZX convention is commonly used for Tait-Bryan angles or nautical angles.
+    The 3-2-1 or YZX convention is the common one used for Tait-Bryan angles or nautical angles.
     See wiki https://en.wikipedia.org/wiki/Conversion_between_quaternions_and_Euler_angles
     for more details
 

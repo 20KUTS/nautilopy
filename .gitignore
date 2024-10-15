@@ -1,6 +1,29 @@
 _docs/
 _proc/
 
+# TG ADDED
+# In the future we can send the compressed csv file
+# Remove large file dataset
+# data/csv/*.csv
+# data/csv/
+# /data/csv/
+# /data/csv
+
+# data/csv/depth_sensor.csv
+# data/csv/dvl_linkquest.csv
+# data/csv/imu_adis.csv
+# data/csv/imu_adis_ros.csv
+# data/csv/imu_xsens_mti.csv
+# data/csv/imu_xsens_mti_ros.csv
+# data/csv/odometry.csv
+# data/csv/sonar_micron.csv
+# data/csv/sonar_micron_ros.csv
+# data/csv/sonar_seaking.csv
+# data/csv/sonar_seaking_ros.csv
+# data/csv/tf.csv
+
+nautilopy-env/
+
 *.bak
 .gitattributes
 .last_checked
