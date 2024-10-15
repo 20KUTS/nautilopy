@@ -5,6 +5,4 @@ d = { 'settings': { 'branch': 'main',
                 'doc_host': 'https://20KUTS.github.io',
                 'git_url': 'https://github.com/20KUTS/nautilopy',
                 'lib_path': 'nautilopy'},
-  'syms': { 'nautilopy.core': {'nautilopy.core.f_q2roll_pitch_yaw': ('core.html#f_q2roll_pitch_yaw', 'nautilopy/core.py')},
-            'nautilopy.quaternion_utils': { 'nautilopy.quaternion_utils.f_q2roll_pitch_yaw': ( 'core.html#f_q2roll_pitch_yaw',
-                                                                                               'nautilopy/quaternion_utils.py')}}}
+  'syms': {'nautilopy.core': {'nautilopy.core.f_q2roll_pitch_yaw': ('core.html#f_q2roll_pitch_yaw', 'nautilopy/core.py')}}}
