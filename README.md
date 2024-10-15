@@ -1,6 +1,5 @@
 # Nautilopy: 3D Underwater Cave Mapping with Sonar Technology
-Thomas GUILMENT
-2024-10-14
+Thomas Guilment, Gabriele Morra, Orhun Aydin, Stefany Carty
 
 - [Project Overview](#project-overview)
   - [Dataset Description](#dataset-description)
