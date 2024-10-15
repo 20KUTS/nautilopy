@@ -28,9 +28,8 @@ Thomas Guilment, Gabriele Morra, Orhun Aydin, Stefany Carty
   </div>
 </div> -->
 
-<div>
-
-</div>
+![](../img/Logo_Jupyter.png) ![](../img/Logo_nautilopy_tiny.png)
+![](../img/Logo_Python.png)
 
 ## Project Overview
 
