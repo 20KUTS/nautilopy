@@ -2,12 +2,14 @@ _docs/
 _proc/
 
 # TG ADDED
-# In the future we can send the compressed csv file
-# Remove large file dataset
-# data/csv/*.csv
-# data/csv/
-# /data/csv/
-# /data/csv
+
+nbs/data/
+nbs/data/bag/
+nbs/data/Pickle_dataset/
+nbs/data/bag/full_dataset/
+
+*.pkl
+*.bag
 
 # data/csv/depth_sensor.csv
 # data/csv/dvl_linkquest.csv
