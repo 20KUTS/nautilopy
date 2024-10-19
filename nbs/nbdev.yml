@@ -1,9 +1,0 @@
-project:
-  output-dir: _docs
-
-website:
-  title: "nautilopy"
-  site-url: "https://20KUTS.github.io/nautilopy"
-  description: "Nautilopy is a Python module for 3D underwater cave mapping using sonar technology."
-  repo-branch: main
-  repo-url: "https://github.com/20KUTS/nautilopy"
