@@ -3,4 +3,7 @@ website:
     contents:
       - index.ipynb
       - 00_core.ipynb
+      - 01_Preprocessing.ipynb
+      - 02_Presentation.ipynb
       - Playground.ipynb
+      - ROSbag2csv.ipynb

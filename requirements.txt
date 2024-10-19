@@ -1,0 +1,14 @@
+bagpy==0.5
+fastcore==1.7.11
+ipython==8.28.0
+ipywidgets==8.1.5
+matplotlib==3.9.2
+nautilopy==0.0.1
+nbdev==2.3.31
+numpy==2.1.2
+pandas==2.2.3
+Pillow==11.0.0
+plotly==5.24.1
+pytest==8.3.3
+scipy==1.14.1
+skimage==0.0

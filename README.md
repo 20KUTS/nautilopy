@@ -120,9 +120,9 @@ folder containing the following interpolated variables.
     project_root/
     ├── nbs/                 # Jupyter notebooks
     │   ├── 00_core.ipynb
-    │   ├── 01_data.ipynb
-    │   ├── 02_model.ipynb
-    │   └── 03_evaluation.ipynb
+    │   ├── 01_Preprocessing.ipynb
+    │   ├── 02_Presentation.ipynb
+    │   └── ...
     ├── nautilopy/           # Auto-generated Python modules
     ├── docs/                # Auto-generated documentation
     ├── tests/               # Additional tests (if needed)
@@ -132,55 +132,110 @@ folder containing the following interpolated variables.
     ├── README.md
     └── LICENSE
 
-## Developer Guide
+## Setting up nautilopy for development
 
-Recommendation: read the End-To-Edn Walkthrough from the
-[Tutorial](https://nbdev.fast.ai/tutorials/tutorial.html)  
-If you are new to using `nbdev` here are some useful pointers to get you
-started.
+This guide will walk you through setting up nautilopy on your local
+machine.
 
-### Install nautilopy in Development mode
+### Prerequisites
+
+- Git
+
+- Conda or Mamba package manager
+
+- Recommendation: If you are new to using `nbdev`, this [nbdev
+  walkthrouhg](https://nbdev.fast.ai/tutorials/tutorial.html) has some
+  useful pointers to get you started:
+
+### Step 1: Create a Virtual Environment
+
+Choose either conda or mamba to create your virtual environment:
+
+#### Using Conda
+
+``` bash
+conda create --name nautilopy_env
+conda activate nautilopy_env
+```
+
+#### Or using Mamba
+
+``` bash
+mamba create --name nautilopy_env
+mamba activate nautilopy_env
+```
+
+### Step 2: Clone the Repository
+
+Clone the nautilopy repository from GitHub:
+
+``` bash
+git clone https://github.com/20KUTS/nautilopy.git
+cd nautilopy
+```
 
 ``` sh
 # make sure nautilopy package is installed in development mode
 $ pip install -e .
-
-# make changes under nbs/ directory
-# ...
-
-# compile to have changes apply to nautilopy
-$ nbdev_prepare
 ```
 
-## Usage
+### Step 3: Install Requirements
 
-### Installation
+Use the provided `s_install_requirements.py` script to install the
+necessary packages:
 
-Install the latest from the GitHub
-[repository](https://github.com/20KUTS/nautilopy):
+#### Using Conda (default)
 
-``` sh
-$ pip install git+https://github.com/20KUTS/nautilopy.git
+``` bash
+python s_install_requirements.py ./requirements.txt
 ```
 
-or from [conda](https://anaconda.org/20KUTS/nautilopy)
+#### Using Mamba
 
-``` sh
-$ conda install -c 20KUTS nautilopy
+``` bash
+python s_install_requirements.py ./requirements.txt --manager mamba
 ```
 
-or mamba
-[mamba](https://mamba.readthedocs.io/en/latest/installation/mamba-installation.html)
+This script will automatically install all required packages listed in
+the `requirements.txt` file.
 
-``` sh
-$ mamba install -c 20KUTS nautilopy
+### Step 4: Verify Installation
+
+After the installation is complete, you can verify that nautilopy is
+correctly set up by importing it in a Python session:
+
+``` python
+import nautilopy
 ```
 
-or from [pypi](https://pypi.org/project/nautilopy/)
+If no errors occur, the installation is successful.
 
-``` sh
-$ pip install nautilopy
-```
+### Step 5: Development with nbdev from FastAI
+
+Then you can start developing followng the [nbdev
+walkthrouhg](https://nbdev.fast.ai/tutorials/tutorial.html)
+
+    # make changes under nbs/ directory
+    # ...
+
+    # compile to have changes apply to nautilopy
+    $ nbdev_prepare
+
+### Troubleshooting
+
+If you encounter any issues during the setup process, please check the
+following:
+
+1.  Ensure your virtual environment is activated.
+2.  Verify that you have the latest version of conda or mamba.
+3.  Check your internet connection, as package downloads require
+    internet access.
+4.  If a specific package fails to install, try installing it manually
+    using `pip install <package_name>` or
+    `conda install <package_name>`.
+
+If you need more help, please refer to the project’s GitHub issues page
+or contact the maintainers.
 
 ### Documentation
 
