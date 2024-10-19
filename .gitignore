@@ -22,6 +22,9 @@ _proc/
 # data/csv/sonar_seaking_ros.csv
 # data/csv/tf.csv
 
+/nbs/Playground.ipynb
+/nbs/Playground.html.md
+
 nautilopy-env/
 
 *.bak
