@@ -68,7 +68,8 @@ def f_install_package(s_package_name: str, s_package_manager: str = "conda") -> 
         'django': {'import': 'django', 'name': 'Django'},
         'sqlalchemy': {'import': 'sqlalchemy', 'name': 'SQLAlchemy'},
         'pytest': {'import': 'pytest', 'name': 'pytest'},
-        'ipython': {'import': 'IPython', 'name': 'IPython'}
+        'ipython': {'import': 'IPython', 'name': 'IPython'},
+        'bagpy': {'import': 'bagpy', 'name': 'bagpy'}
     }
     
     # Get package info from the mapping, or use default values if not in the mapping
@@ -91,6 +92,11 @@ def f_install_package(s_package_name: str, s_package_manager: str = "conda") -> 
 
     print(f"{s_display_name} not found. Installing using {s_package_manager}...")
     
+    # Force pip installation for bagpy
+    if s_package_name.lower() == 'bagpy':
+        print("bagpy requires pip for installation. Proceeding with pip...")
+        return f_install_with_pip()
+        
     # Validate the package manager
     if s_package_manager not in ['conda', 'mamba']:
         raise ValueError("Package manager must be 'conda' or 'mamba'")
