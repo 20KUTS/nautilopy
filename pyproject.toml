@@ -1,7 +1,7 @@
 [project]
 name = "nautilopy"
 version = "0.1.0"
-description = "Add your description here"
+description = "Tools for preprocessing and analysis of underwater acoustic data."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -28,3 +28,7 @@ Homepage = "https://github.com/20KUTS/nautilopy"
 [build-system]
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["nautilopy"]
