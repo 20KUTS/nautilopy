@@ -21,3 +21,10 @@ dependencies = [
     "scikit-image==0.24.0",
     "scipy==1.14.1",
 ]
+
+[project.urls]
+Homepage = "https://github.com/20KUTS/nautilopy"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
