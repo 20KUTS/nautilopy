@@ -2847,10 +2847,10 @@ def f_plot_horizontal_sonar(m_sonar: np.ndarray, d_start_micron: int, d_image_wi
     import matplotlib.pyplot as plt
 
     # Generate sample horizontal sonar data
-    d_n_ranges = 397  # 397 bins over 20 meters
+    d_n_ranges = 397  # 397 bins over 19.95 meters
     d_n_time_steps = 2000  # Multiple revolutions
     m_sonar = np.random.rand(d_n_ranges, d_n_time_steps)
-    v_range_micron = np.linspace(0, 20, d_n_ranges)  # 20 meters range
+    v_range_micron = np.linspace(0, 19.95, d_n_ranges)  # 20 meters range
 
     # Create some artificial features in the sonar data
     m_sonar[50:70, 400:600] = 0.8  # Simulated object across multiple scans
@@ -2875,7 +2875,7 @@ def f_plot_horizontal_sonar(m_sonar: np.ndarray, d_start_micron: int, d_image_wi
     3. **Plot Customization**:
        - Sets a title "Horizontal Sonar" with large font size.
        - Labels the x-axis to indicate the time scale (1 revolution every 200 points).
-       - Labels the y-axis to show the range scale (397 bins over 20 meters).
+       - Labels the y-axis to show the range scale (397 bins over 19.95 meters).
        - Adjusts tick label sizes for better readability.
 
     4. **Image Extent**:
@@ -2905,7 +2905,7 @@ def f_plot_horizontal_sonar(m_sonar: np.ndarray, d_start_micron: int, d_image_wi
     # Plot the sonar data
     h_ax.set_title("Horizontal Sonar", {'fontsize': int(24 * v_figsize[0]/16)})
     h_ax.set_xlabel('1 revolution every 200 points', {'fontsize': int(18 * v_figsize[0]/16)})
-    h_ax.set_ylabel('397 bins over 20 meters', {'fontsize': int(18 * v_figsize[0]/16)})
+    h_ax.set_ylabel('397 bins over 19.95 meters', {'fontsize': int(18 * v_figsize[0]/16)})
     h_ax.tick_params(axis='both', labelsize=int(18 * v_figsize[0]/16))
     h_im = h_ax.imshow(m_sonar, aspect='auto', interpolation='none', extent=[d_start_micron-194, d_end_micron-194, v_range_micron[-1], 0])
     
@@ -2945,7 +2945,7 @@ def f_plot_vertical_sonar(m_sonar: np.ndarray, d_start_seaking: int, d_image_wid
     import matplotlib.pyplot as plt
 
     # Generate sample vertical sonar data
-    d_n_ranges = 50  # 50 bins over 10 meters
+    d_n_ranges = 50  # 50 bins over 9.80 meters
     d_n_time_steps = 2000  # Multiple revolutions
     m_sonar = np.random.rand(d_n_ranges, d_n_time_steps)
     v_range_seaking = np.linspace(0, 10, d_n_ranges)  # 10 meters range
@@ -2973,7 +2973,7 @@ def f_plot_vertical_sonar(m_sonar: np.ndarray, d_start_seaking: int, d_image_wid
     3. **Plot Customization**:
        - Sets a title "Vertical Sonar" with large font size.
        - Labels the x-axis to indicate the time scale (1 revolution every 200 points).
-       - Labels the y-axis to show the range scale (397 bins over 20 meters).
+       - Labels the y-axis to show the range scale (397 bins over 19.95 meters).
        - Adjusts tick label sizes for better readability.
 
     4. **Image Extent**:
@@ -3003,7 +3003,7 @@ def f_plot_vertical_sonar(m_sonar: np.ndarray, d_start_seaking: int, d_image_wid
     # Plot the sonar data
     h_ax.set_title("Vertical Sonar", {'fontsize': int(24 * v_figsize[0]/16)})
     h_ax.set_xlabel('1 revolution every 201 points', {'fontsize': int(18 * v_figsize[0]/16)})
-    h_ax.set_ylabel('50 bins over 10 meters', {'fontsize': int(18 * v_figsize[0]/16)})
+    h_ax.set_ylabel('50 bins over 9.80 meters', {'fontsize': int(18 * v_figsize[0]/16)})
     h_ax.tick_params(axis='both', labelsize=int(18 * v_figsize[0]/16))
     h_im = h_ax.imshow(m_sonar, aspect='auto', interpolation='none', extent=[d_start_seaking-95, d_end_seaking-95, v_range_seaking[-1], 0])
     
@@ -3044,7 +3044,7 @@ def f_plot_horizontal_sonar_with_angles(m_sonar: np.ndarray, v_angles_rad: np.nd
     import matplotlib.pyplot as plt
 
     # Generate sample horizontal sonar data
-    d_n_ranges = 397  # 397 bins over 20 meters
+    d_n_ranges = 397  # 397 bins over 19.95 meters
     d_n_angles = 200  # One full revolution
     m_sonar = np.random.rand(d_n_ranges, d_n_angles)
     v_range_micron = np.linspace(0, 20, d_n_ranges)  # 20 meters range
@@ -3076,7 +3076,7 @@ def f_plot_horizontal_sonar_with_angles(m_sonar: np.ndarray, v_angles_rad: np.nd
     4. **Plot Customization**:
        - Sets a title "Horizontal Sonar" with large font size.
        - Labels the x-axis to indicate the angular scale (360 degrees per revolution).
-       - Labels the y-axis to show the range scale (397 bins over 20 meters).
+       - Labels the y-axis to show the range scale (397 bins over 19.95 meters).
        - Adjusts tick label sizes for better readability.
 
     5. **Angular Tick Adjustment**:
@@ -3108,7 +3108,7 @@ def f_plot_horizontal_sonar_with_angles(m_sonar: np.ndarray, v_angles_rad: np.nd
     # Plot the sonar data
     h_ax.set_title("Horizontal Sonar", {'fontsize': int(24 * v_figsize[0]/16)})
     h_ax.set_xlabel('1 revolution (360 degrees) every 200 points', {'fontsize': int(18 * v_figsize[0]/16)})
-    h_ax.set_ylabel('397 bins over 20 meters', {'fontsize': int(18 * v_figsize[0]/16)})
+    h_ax.set_ylabel('397 bins over 19.95 meters', {'fontsize': int(18 * v_figsize[0]/16)})
     h_ax.tick_params(axis='both', labelsize=int(18 * v_figsize[0]/16))
 
     # Convert angles from radians to degrees
@@ -3161,7 +3161,7 @@ def f_plot_vertical_sonar_with_angles(m_sonar: np.ndarray, v_angles_rad: np.ndar
     import matplotlib.pyplot as plt
 
     # Generate sample vertical sonar data
-    d_n_ranges = 50  # 50 bins over 10 meters
+    d_n_ranges = 50  # 50 bins over 9.80 meters
     d_n_angles = 201  # One full revolution
     m_sonar = np.random.rand(d_n_ranges, d_n_angles)
     v_range = np.linspace(0, 10, d_n_ranges)  # 10 meters range
@@ -3193,7 +3193,7 @@ def f_plot_vertical_sonar_with_angles(m_sonar: np.ndarray, v_angles_rad: np.ndar
     4. **Plot Customization**:
        - Sets a title "Vertical Sonar" with large font size.
        - Labels the x-axis to indicate the angular scale (360 degrees per revolution, 201 points).
-       - Labels the y-axis to show the range scale (50 bins over 10 meters).
+       - Labels the y-axis to show the range scale (50 bins over 9.80 meters).
        - Adjusts tick label sizes for better readability.
 
     5. **Angular Tick Adjustment**:
@@ -3225,7 +3225,7 @@ def f_plot_vertical_sonar_with_angles(m_sonar: np.ndarray, v_angles_rad: np.ndar
     # Plot the sonar data
     h_ax.set_title("Vertical Sonar", {'fontsize': int(24 * v_figsize[0]/16)})
     h_ax.set_xlabel('1 revolution (360 degrees) every 201 points', {'fontsize': int(18 * v_figsize[0]/16)})
-    h_ax.set_ylabel('50 bins over 10 meters', {'fontsize': int(18 * v_figsize[0]/16)})
+    h_ax.set_ylabel('50 bins over 9.80 meters', {'fontsize': int(18 * v_figsize[0]/16)})
     h_ax.tick_params(axis='both', labelsize=int(18 * v_figsize[0]/16))
 
     # Convert angles from radians to degrees
@@ -3413,7 +3413,7 @@ def f_animation_AUV_micron_trajectory(m_interp_pos_micron_final: np.ndarray,
         h_ax2 = h_fig.add_subplot(h_gs[3:6, 0:6])
         h_ax2.set_title(" "*50 + "Horizontal Sonar", {'fontsize': 24})
         h_ax2.set_xlabel('1 revolution every 200 points', {'fontsize': 18})
-        h_ax2.set_ylabel('397 bins over 20 meters', {'fontsize': 18})
+        h_ax2.set_ylabel('397 bins over 19.95 meters', {'fontsize': 18})
         h_im = h_ax2.imshow(m_sonar_micron, aspect='auto', interpolation='none',
                             extent=[d_start_micron, d_end_micron, v_range_micron[-1], 0])
 
@@ -3467,7 +3467,7 @@ def f_create_polar_sonar_animation(m_sonarReceivedIntensity_micron_final: np.nda
     from IPython.display import HTML
 
     # Generate sample sonar data
-    d_n_ranges = 397  # 397 bins over 20 meters
+    d_n_ranges = 397  # 397 bins over 19.95 meters
     d_n_angles = 2000  # Multiple revolutions
     m_sonarReceivedIntensity_micron_final = np.random.rand(d_n_ranges, d_n_angles)
     v_angles_rad_micron_final = np.linspace(0, 10*2*np.pi, d_n_angles)  # 10 full rotations
@@ -3734,7 +3734,7 @@ def f_micron_with_trajectory(m_interp_pos_micron_final: np.ndarray,
         h_ax2 = plt.subplot(h_gs[3:6, 0:6])
         h_ax2.set_title(" "*50 + "Horizontal Sonar", {'fontsize': 24})
         h_ax2.set_xlabel('1 revolution every 200 points', {'fontsize': 18})
-        h_ax2.set_ylabel('397 bins over 20 meters', {'fontsize': 18})
+        h_ax2.set_ylabel('397 bins over 19.95 meters', {'fontsize': 18})
         h_im = h_ax2.imshow(m_sonar_micron, aspect='auto', interpolation='none', extent=[d_start_micron, d_end_micron, v_range_micron[-1], 0])
 
         # Colorbar
@@ -3828,7 +3828,7 @@ def f_seaking_with_trajectory(m_interp_pos_micron_final: np.ndarray,
     4. **Vertical Sonar Data Visualization**:
        - Displays the vertical sonar data as a 2D color plot below the trajectory plots.
        - Shows a segment of sonar data corresponding to the current position in the trajectory.
-       - The y-axis represents depth (50 bins over 10 meters), providing a vertical profile view.
+       - The y-axis represents depth (50 bins over 9.80 meters), providing a vertical profile view.
 
     5. **Layout and Styling**:
        - Uses a grid layout to organize the background image, 3D trajectory plots, and sonar data plot.
@@ -3930,7 +3930,7 @@ def f_seaking_with_trajectory(m_interp_pos_micron_final: np.ndarray,
         h_ax2 = plt.subplot(h_gs[3:6, 0:6])
         h_ax2.set_title(" "*50 + "Vertical Sonar", {'fontsize': 24})
         h_ax2.set_xlabel('1 revolution every 201 points', {'fontsize': 18})
-        h_ax2.set_ylabel('50 bins over 10 meters', {'fontsize': 18})
+        h_ax2.set_ylabel('50 bins over 9.80 meters', {'fontsize': 18})
         h_im = h_ax2.imshow(m_sonar_micron, aspect='auto', interpolation='none', 
                             extent=[d_start_micron, d_end_micron, v_range_micron[-1], 0])
 
