@@ -1,8 +1,7 @@
-# Nautilopy: 3D Underwater Cave Mapping with Sonar Technology
+# NautiloPy: An open-source Python framework for the Gironda Underwater Cave Sonar And vision data set
+**Authors:** Thomas Guilment, Gabriele Morra, Leonardo Macelloni, and Marco D'Emidio
 
-**Authors:** Thomas Guilment, Gabriele Morra, Leonardo Macelloni, Marco D'Emilio, Orhun Aydin, Stefany Carty
-
-![](./img/Logo_nautilopy_tiny.png)
+![](./img/Logo_nautilopy_tiny_v2.png)
 
 ## Run the Project
 
@@ -30,7 +29,7 @@ This project uses [UV](https://docs.astral.sh/uv/) for dependency management and
 
 After installing UV, download/clone this repository:
 ```bash
-git clone https://github.com/20KUTS/nautilopy-article.git
+git clone https://github.com/20KUTS/nautilopy-uace2025.git
 ```
 
 Then, open a shell/terminal/command prompt inside the folder and run:
@@ -163,7 +162,6 @@ project_root/
 ├── img/
 ├── nautilopy/
 ├── 01_Preprocessing.ipynb
-├── DatasetOverview.ipynb
 ├── Nautilopy.ipynb
 ├── ROSbag2csv.ipynb
 ├── pyproject.toml
